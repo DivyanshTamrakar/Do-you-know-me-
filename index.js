@@ -28,7 +28,19 @@ function play(question, answer) {
 
 
 
-
+var highscore = [{
+  name: "Aman",
+  score: 1
+},
+{
+  name  : "Aakash",
+  score: 8
+},
+{
+  name  : "Yogesh",
+  score : 6
+}
+]
 
 var questions = [{
       question: "Who is my favorite superhero?\n",
@@ -69,3 +81,11 @@ for (var i = 0; i < questions.length; i++) {
 }
 
 console.log("YAY! your final Score is : ", final_score);
+console.log('\n');
+console.log(chalk.yellow.bold('High Scores : \n'));
+for(var  j = 0 ; j<highscore.length; j++)
+{
+  var current_highscore =  highscore[j];
+  console.log(current_highscore.name +" : "+current_highscore.score );
+  
+}

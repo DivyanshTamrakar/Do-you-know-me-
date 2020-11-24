@@ -1,6 +1,7 @@
 // hint: there's an error in these objects
 // if you copy/paste blindly it won't work
 var readline = require('readline-sync')
+var chalk = require('chalk')
 var score = 0;
 var final_score = 0;
 
@@ -8,13 +9,13 @@ function play(question, answer) {
 
   var userAnswer = readline.question(question)
   if (userAnswer === answer) {
-    console.log("You are Right!")
+    console.log(chalk.greenBright("You are Right!"))
     score = score + 1;
     final_score = score;
 
   }
   else {
-    console.log("You are Wrong!")
+    console.log(chalk.redBright("You are Wrong!"))
     score = score - 1;
     final_score = score;
   }

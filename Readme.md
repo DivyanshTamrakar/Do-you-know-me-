@@ -1,6 +1,6 @@
  # First CLI app Quiz made in Live Class with Tanay Pratap
 
-Hello guys, This is my first CLI app.
+This is my First CLI app in Node.js. This quiz asks some questions about me.
 
 
  
